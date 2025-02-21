@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
+
+
+header{
+    position: relative;
+}
+
+.header{
+    text-align: center;
+    color: #fff;
+    margin-top: 23px;
+    font-family: cursive;
+    font-weight: 100;
+    font-style: italic;
+    position: relative;
+}
+
+
+.bills{
+    color: #fff;
+    display: flex;
+    top: 0px;
+    align-items: center;
+    margin: 2px;
+    position: fixed;
+    background-color:rgb(34, 34, 33);
+    /* border: 1px solid rebeccapurple; */
+}
+
+.total_bill{
+    background-color: #fff;
+    width: 10rem;
+    height: 1rem;
+    padding: 12px;
+    margin: 12px;
+    color: black;
+    padding-bottom: 25px;
+    /* overflow: hidden; */
+}
+
+.clear_bill{
+    margin: 12px;
+    color: black;
+    padding: 12px;
+    height: max-content;
+    width: max-content;
+    background-color: antiquewhite;
+    border-radius: 1px;
+    &&:hover{
+        cursor: pointer;
+        background-color: #404cb6;
+        color: whitesmoke;
+    }
+}
+
+
+
+.time{
+    color: #000000;
+    background-color: aliceblue;
+    width: max-content;
+    padding: 12px;
+    position: fixed;
+    right: 22px;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    top: 0px;
+}
+
+.card_container{
+    height: max-content;
+    width: 100vw;
+    /* background-color: bisque; */
+    padding: 7px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* overflow: ; */
+}
+
+
+
+.card_list{
+    border: 2px solid white;
+    width: max-content;
+    color: white;
+    /* margin-left: 12px; */
+    margin-top: 12px;
+    background-color: black;
+}
+
+.card_list>img{
+    width: 20vw;
+    height: 40vh;
+    background-size: contain;
+    
+}
+
+.food_item,.price,.add_to_cart{
+    border: 1px solid white;
+    padding: 12px;
+    margin-top: -5px;
+    background-color: white;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add_to_cart{
+    /* border: 1px solid rebeccapurple; */
+    width: 6rem;
+    text-align: center;
+    margin: 12px;
+    background-color: rgb(153, 152, 155);
+    cursor: pointer;
+    border-radius: 12px;
+    height: 21px;
+   
+}
+
+.price{
+    text-align: center;
+    width: 6rem;
+    margin: 12px;
+}
+
+
+
+.price_add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    background-color: #fff;
+}
+

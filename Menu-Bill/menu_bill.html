@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <h1 class="header">Menu</h1>
+        <div class="bills">
+            <div onclick="clearBill()" class="clear_bill">Clear Bill</div>
+            <div class="clear_bill" onclick="calculate()">Calculate Bill</div>
+            <div class="total_bills" >Total</div>
+            <div class="total_bill"></div>
+        </div>
+
+            <div class="time">2</div>
+      
+        </header>
+        <div class="card_container">
+            <div class="card_list">
+                <img src="Images/Plain Dosa.jpg" alt="pasta">
+                <div class="food_item dish_one">Dosa</div>
+                <div class="price_add">
+                    <div class="price" id="price1">99</div>
+                    <!-- <button onclick="addCart()" class="add_to_cart">Add</button> -->
+                     <input class="add_to_cart" id="c1" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Bread Pakoda.jpg" alt="pasta">
+                <div class="food_item">Bread Pakoda</div>
+                <div class="price_add">
+                    <div class="price" id="price2">22</div>
+                    <input class="add_to_cart" id="c2"  onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Club Sandwish.jpg" alt="pasta">
+                <div class="food_item">Club Sandwish</div>
+                <div class="price_add">
+                    <div class="price" id="price3">45</div>
+                    <input class="add_to_cart" id="c3" onclick="check()"  type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Idli.jpg" alt="pasta">
+                <div class="food_item">Idli</div>
+                <div class="price_add">
+                    <div class="price" id="price4">70</div>
+                    <input class="add_to_cart" id="c4" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Momos.jpg" alt="pasta">
+                <div class="food_item">Momos</div>
+                <div class="price_add">
+                    <div class="price" id="price5">40</div>
+                    <input class="add_to_cart" id="c5" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Paav Bhaji.jpg" alt="pasta">
+                <div class="food_item">Paav Bhaji</div>
+                <div class="price_add">
+                    <div class="price" id="price6">120</div>
+                    <input class="add_to_cart" id="c6" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Paneer Pizza.jpg" alt="pasta">
+                <div class="food_item">Paneer Pizza</div>
+                <div class="price_add">
+                    <div class="price" id="price7">150</div>
+                    <input class="add_to_cart" id="c7" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Paneer Roll.jpg" alt="pasta">
+                <div class="food_item">Paneer Roll</div>
+                <div class="price_add">
+                    <div class="price" id="price8">120</div>
+                    <input class="add_to_cart" id="c8" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Phapda jalebi.jpg" alt="pasta">
+                <div class="food_item">Phapda jalebi</div>
+                <div class="price_add">
+                    <div class="price" id="price9">50</div>
+                    <input class="add_to_cart" id="c9" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Ragi Puttu.jpg" alt="pasta">
+                <div class="food_item">Ragi Puttu</div>
+                <div class="price_add">
+                    <div class="price" id="price10">150</div>
+                    <input class="add_to_cart" id="c10" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Samosa.jpg" alt="pasta">
+                <div class="food_item">Samosa</div>
+                <div class="price_add">
+                    <div class="price" id="price11">60</div>
+                    <input class="add_to_cart" id="c11" onclick="check()" type="checkbox">
+                </div>
+            </div>
+            <div class="card_list">
+                <img src="Images/Onion Pakoda.jpg" alt="pasta">
+                <div class="food_item">Onion Pakoda</div>
+                <div class="price_add">
+                    <div class="price" id="price12">20</div>
+                    <input class="add_to_cart" id="c12" onclick="check()" type="checkbox">
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
