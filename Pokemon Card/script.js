@@ -1,5 +1,5 @@
 let pokeName = "pikachu="
-const PokeURL = `https://pokeapi.co/api/v2/pokemon/${pokeName}`
+const PokeURL = `https://pokeapi.co/api/v2/pokemon/pikachu`
 let poke = document.querySelector('.poke')
 let PokeData = fetch(PokeURL)
 PokeData.then(response => response.json())

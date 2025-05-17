@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments-AKM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+
+</head>
+<body class="bg-white text-gray-800">
+<div id="cursor" class="fixed pointer-events-none w-8 h-8 rounded-full border-2 border-indigo-600 
+    transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-150 z-50"></div>
+    
+  <!-- Header -->
+  <header class="bg-gray-900 text-white shadow-md dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center" data-aos="fade-down">
+      <h1 class="text-2xl font-bold">Ankit Kumar Maurya</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-indigo-400 transition">About</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+        <a href="" class="hover:text-indigo-400 transition">Assignments </a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-20" id="home">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Assignments</h2>
+            <p class="text-lg mb-8" data-aos="fade-up">Welcome to my assignments page! Here you can find all the assignments I have completed.</p>
+            <a href="#projects" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300" data-aos="fade-up">View Projects</a>
+        </div>
+
+
+
+  
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6 mt-12" data-aos="fade-up">
+    <p>&copy; 2025 Ankit Kumar Maurya. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+
+<script>
+  const cursor = document.getElementById('cursor');
+
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  const hoverTargets = document.querySelectorAll('a, button');
+
+  hoverTargets.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.classList.add('hovered');
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hovered');
+    });
+  });
+
+  
+
+</script>
+</body>
+</html>
