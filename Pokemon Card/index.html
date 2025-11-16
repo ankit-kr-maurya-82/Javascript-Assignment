@@ -4,19 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeDex</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        .container{
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .search-wrapper{
+            display: flex;
+            gap: 10px;
+        }
+
+        input{
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #999;
+        }
+
+        button{
+            padding: 12px 25px;
+            background: #ff4747;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .poke-card{
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        img{
+            width: 150px;
+        }
+
+        .error{
+            margin-top: 20px;
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
 </head>
 <body>
+
     <div class="container">
         <div class="search-wrapper">
-            <input type="text" name="" id="country-inp" placeholder="Enter a pokemon name her...">
+            <input type="text" id="pokemon-input" placeholder="Enter Pokémon name here...">
             <button id="search-btn">Search</button>
         </div>
-        
-    </div>
-    <div class="result container">
+
+        <div class="result"></div>
     </div>
 
-    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
