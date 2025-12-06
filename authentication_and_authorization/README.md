@@ -7,3 +7,13 @@
     // res.send('Server is ready');
     // res.cookie("name", "ankit");
     // res.send("done");
+
+    bcrypt.genSalt(10, function(err, salt){
+    // bcrypt.hash("ankit", salt, function(err,hash){
+    //     console.log("password: ",hash);
+        
+    // })
+    // bcrypt.hash("ankit", salt, function(err,salt){
+    //     console.log("salt: ",salt);
+        
+    // })
